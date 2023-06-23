@@ -1,0 +1,1 @@
+export const MASTER_GAIN = 0.3

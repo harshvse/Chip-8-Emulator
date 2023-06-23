@@ -5,8 +5,8 @@ export class Registers{
     constructor(){
         this.V = new Uint8Array(REGISTERS_COUNT);
         this.I = 0;   
-        this.delayTimer = 0;
-        this.soundTimer = 0;
+        this.DT = 0;
+        this.ST = 0;
         this.PC = LOAD_PROGRAM_ADDRESS;
         this.SP = -1;
         this.stack = new Uint16Array(STACK_DEPTH);
@@ -15,8 +15,8 @@ export class Registers{
     reset(){
         this.V.fill(0);
         this.I = 0;   
-        this.delayTimer = 0;
-        this.soundTimer = 0;
+        this.DT = 0;
+        this.ST = 0;
         this.PC = LOAD_PROGRAM_ADDRESS;
         this.SP = -1;
         this.stack.fill(0);
